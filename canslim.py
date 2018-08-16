@@ -46,13 +46,9 @@ class AnnualChange(BaseEstimator, TransformerMixin):
         elif self.return_cols:
             print('Column(s) Generated : ' + str(change_cols))
             return df, change_cols
-        elif self.add_percent:
+        else:
             print('Column(s) Generated : ' + str(change_cols))
-			print('Columns(s) Generated : ' + str(perc_cols))
             return df
-		else:
-			print('Column(s) Generated : ' + str(change_cols))
-			return df
 
 '''
 Class - QuarterlyChange
